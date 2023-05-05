@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pocketpharma</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slide.css">
   <script src="https://kit.fontawesome.com/92c02fd578.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,12 +17,75 @@
           <img src="./img/logo.svg" alt="Pocketpharma">
         </a>
         <div class="nav-right">
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button><i class="fa-solid fa-search"></i></button>
           <button>TR</button>
           <button><i class="fa-solid fa-bars"></i></button>
         </div>
       </nav>
     </header>
+    <div class="search-container">
+      <form>
+        <div class="searchbar-container">
+          <input id="searchbar" type="text" placeholder="İLAÇ/KATEGORİ ARAT" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <button class="photo"><img src="./img/photo.svg" alt=""></button>
+      </form>
+    </div>
+    <div class="slideshow">
+      <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="./img/1.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/1.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/1.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/1.svg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+    <!--image slider end-->
+    </div>
   </div>
 </body>
 </html>

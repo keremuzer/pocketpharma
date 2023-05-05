@@ -1,2 +1,92 @@
 @import "./normalize.css";
-@import "./header.css";
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: #2973B8;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a{
+  height: 56px;
+}
+
+.nav-right{
+  margin-right: 8px;
+}
+
+.nav-right button, form button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.search-container{
+  display: inline-block;
+  margin: 32px 0;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  margin-left: 18px;
+}
+
+.searchbar-container{
+  background-color: #99CEFF;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar-container button{
+  margin-right: 12px;
+}
+
+#searchbar{
+  background-color: #99CEFF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  height: 36px;
+  width: 90%;
+  padding-left: 14px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.photo{
+  z-index: -1;
+  position: relative;
+  right: 18px;
+  width: 56px;
+  background-color: #858585;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 38px;
+  text-align: end;
+  padding-right: 12px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
