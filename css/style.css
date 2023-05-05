@@ -1,4 +1,9 @@
 @import "./normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+  font-family: 'Work Sans', sans-serif;
+}
 
 .container{
   display: flex;
@@ -89,4 +94,93 @@ input:focus{
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
+}
+
+.partnership{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4E4E4;
+  height: 185px;
+  font-size: 14px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+h2{
+  font-weight: 400;
+}
+
+.partners{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.follow-us{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-links{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4E4E4;
+  gap: 24px;
+  border-radius: 24px;
+}
+
+.links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 360px;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.links a{
+  text-decoration: none;
+  color: #2D9985;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bottom-links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.bottom-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
