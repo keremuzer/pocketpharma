@@ -1,0 +1,12 @@
+section{
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section video{
+  width: 94%;
+  border-radius: 16px;
+  align-self: center;
+}
