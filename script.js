@@ -13,3 +13,9 @@ bars.addEventListener("click", function(){
     active = false;
   }
 });
+
+let search_btn = document.getElementById("search_btn");
+let search_value;
+search_btn.addEventListener("click", function(){
+  search_value = document.getElementById("searchbar").value;
+});

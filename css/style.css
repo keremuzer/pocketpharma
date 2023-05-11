@@ -55,7 +55,8 @@ nav a{
   align-items: center;
 }
 
-.searchbar-container button{
+.searchbar-container a{
+  color: white;
   margin-right: 12px;
 }
 

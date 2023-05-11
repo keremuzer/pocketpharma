@@ -6,10 +6,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Float four columns side by side */
 .column {
   width: 25%;
-  padding: 0 10px;
+  padding: 0 8px;
+  margin-bottom: 24px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -17,7 +25,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  flex-wrap: wrap;
+  max-width: 99%;
 }
 
 /* Clear floats after the columns */
@@ -105,7 +114,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   padding: 8px 16px;
-  width: 110px;
+  width: 120px;
   height: 45px;
   display: flex;
   justify-content: center; /* horizontal alignment */

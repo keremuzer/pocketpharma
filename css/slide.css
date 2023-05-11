@@ -79,7 +79,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: calc(45vw - 19px);
+  margin-top: calc(45vw - 20px);
 }
 
 .navigation-auto div{
