@@ -11,7 +11,7 @@ fetch('veriler.txt')
       return { ad, içerik, firma, küb, kt };
     });
 
-    console.log(objects); // Her satır bir obje içeren bir dizi
+    console.tlog(objects); // Her satır bir obje içeren bir dizi
     console.log(objects[0].ad);
   })
   .catch(error => {
